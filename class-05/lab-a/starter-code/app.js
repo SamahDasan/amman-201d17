@@ -1,15 +1,21 @@
 'use strict';
 /////////////////////////////////////
 /* Problem 1 (this is your demo that we'll solve in class)
-Write a function called sum() that takes in two numbers as arguments and then returns an array where the first element is the sum of those numbers, and the second element is a concatenated string that EXACTLY follows this example and uses the values that were input into the function:
+Write a function called sum() that takes in two numbers as arguments and then returns an array 
+where the first element is the sum of those numbers, and the second element is a concatenated
+string that EXACTLY follows this example and uses the values that were input into the function:
 
 "The sum of 4 and 7 is 11."
 
-Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
+Test this function by hand in the console to get it working, 
+and when you think it is finished, uncomment the call for the testSum()
+ function below and check the console to see if the test passes.*/
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-
+let result=a+b;
+let statement= 'the sum of ${a} and ${b} is ${result}';
+return [result,statement];
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -27,6 +33,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
+let result = a*b;
+let statement ='The Product of ${A} and ${b} is ${result}';
 
 }
 
@@ -48,6 +56,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+let sum=a+b+c;
+let multiply=a*b*c;
+let statement= 'The Sum of '+'a'+'and'+'b'+'and'+'c'+ '=' +sum +'.';
+let statement2='The Product Of '+'a'+'and'+'b'+'and'+'c'+'='+multiply+'.';
+return[sum,multiplay,statement,statement2];
 
 }
 
@@ -70,7 +83,9 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+    let sumAr= teatArray[0]+teatArray[1]+teatArray[2];
+    let statement ='testArray[0]'+','+'testArray[1]'+','+'testArray[2]'+'Was Pssed In array Number.and is sum is'+sumAr;
+    return[sumAr,statement];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -91,7 +106,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+let multipliesArr=testArrwy[0]*testArrwy[1]*testArrwy[2];
+let statement ='testArray[0] ,'+'testArray[1] ,'+'testArray[2] ,'+'Has Product Of'+multipliesArr;
+return[multipliesArr,statement];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
