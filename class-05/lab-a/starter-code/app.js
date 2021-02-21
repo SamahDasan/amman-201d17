@@ -33,7 +33,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+let result = a*b;
+let statement ='The Product of ${A} and ${b} is ${result}';
+ 
 }
 
 // Here is the test for multiply(); uncomment it to run it
