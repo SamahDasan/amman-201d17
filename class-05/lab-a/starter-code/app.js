@@ -35,7 +35,7 @@ Test this function by hand in the console to get it working, and when you think 
 function multiply(a, b) { //eslint-disable-line
 let result = a*b;
 let statement ='The Product of ${A} and ${b} is ${result}';
- 
+
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -56,6 +56,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+let sum=a+b+c;
+let multiply=a*b*c;
+let statement= 'The Sum of '+'a'+'and'+'b'+'and'+'c'+ '=' +sum +'.';
+let statement2='The Product Of '+'a'+'and'+'b'+'and'+'c'+'='+multiply+'.';
+return[sum,multiplay,statement,statement2];
 
 }
 
