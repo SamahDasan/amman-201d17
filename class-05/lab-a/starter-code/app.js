@@ -106,7 +106,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+let multipliesArr=testArrwy[0]*testArrwy[1]*testArrwy[2];
+let statement ='testArray[0] ,'+'testArray[1] ,'+'testArray[2] ,'+'Has Product Of'+multipliesArr;
+return[multipliesArr,statement];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
